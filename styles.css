@@ -7,20 +7,69 @@ body {
     background-image: url('images/pattern.png');
 }
 
+.page {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
 #mainheader {
-    background-color: maroon;
+    background-color:maroon;
 }
 
 nav {
-    height: 60px;
-    width: 1000px;
-    margin: 0 auto 20px;
+    display: block;
+    overflow: hidden;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 800px)  { 
+    nav {
+        height: 60px;
+        width: 1000px;
+        margin: 0 auto 20px;
+    }
+}
+
+@media screen and (min-width: 800px)  { 
+    #mainheader {
+        background-color:maroon;
+    }
 }
 
 #leftmenu {
-    float: left;
-    width: 30%;
     margin-bottom: 20px;
+    display:block;
+}
+
+
+@media screen and (min-width: 800px)  { 
+    #leftmenu {
+        float: left;
+        width: 30%;
+        border:0;
+    }
 }
 
 .searchbox {
@@ -30,9 +79,15 @@ nav {
 }
 
 #main {
-    float: right;
-    width: 70%;
+    display: block;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px)  { 
+    #main {
+        float: right;
+        width: 70%;
+    }
 }
 
 footer {
@@ -59,27 +114,14 @@ th {
     padding: 5px;
 }
 
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav>ul>li {
-    float: left;
-}
-
-nav>ul>li a {
-    display: block;
-    color: whitesmoke;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .page-content {
-    width: 1280px; margin: 0 auto;
+    width: 100%; margin: 0 auto;
+}
+
+@media screen and (min-width: 800px)  { 
+    .page-content { 
+        width:1280px;
+    }
 }
 
 
@@ -102,7 +144,26 @@ nav>ul>li a {
 .section-wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
+
+@media screen and (min-width: 800px)  { 
+    .section-wrapper {
+        flex-direction: row;
+    }
+}
+
+.section-wrapper section {
+margin:16px 0;
+}
+
+@media screen and (min-width: 800px)  { 
+    .section-wrapper section {
+        margin:0;
+    }
+}
+
+
 
 .section-wrapper h3 {
     padding:0;
@@ -117,4 +178,15 @@ nav>ul>li a {
     border-style: dashed; */
     padding: 16px; 
     border-radius: 10px;
+}
+
+.article-photo img {
+    width: 380px;
+
+}
+
+@media screen and (min-width: 800px)  { 
+    .article-photo img {
+        width: 100%;
+    }
 }
