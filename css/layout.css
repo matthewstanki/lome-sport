@@ -1,0 +1,64 @@
+/* Layout */
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Page header */
+
+.page-header {
+  background-color: maroon;
+  margin-bottom: 30px;
+}
+
+/* Page content */
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content-aside {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.content-main {
+  display: block;
+}
+
+/* Media styles for desktop */
+@media screen and (min-width: 800px) {
+  .page-content {
+    flex-direction: row;
+  }
+
+  .content-main {
+    flex-grow: 1;
+    margin-left: 30px;
+  }
+
+  .content-aside {
+    width: 350px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page-content {
+    width: 1280px;
+  }
+}
+
+/* Page footer */
+
+.page-footer {
+  padding: 16px;
+  opacity: 0.7;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
