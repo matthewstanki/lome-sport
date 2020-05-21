@@ -1,0 +1,30 @@
+/* Tables styles */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 100%;
+}
+
+table th {
+  font-weight: 700;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+/* Shipping Table styles */
+table.shipping-table {
+  background-color: #eaeaea9c;
+  margin-top: 10px;
+}
+
+table.shipping-table caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+table.shipping-table th:first-child {
+  width: 50px;
+}

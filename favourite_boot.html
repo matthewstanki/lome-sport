@@ -8,20 +8,23 @@
     <meta name="description" content="Store front for LÓMË">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/nowelogo.png">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script>
 
         function save() {
-            localStorage.setItem("applepie", true);
+            localStorage.setItem("mercurial vapor", true);
         }
 
         window.onload = function () {
             var favorite = document.getElementById('favorite');
             if (window.localStorage) {
                 var storage = window.localStorage;
-                if (storage.getItem('applepie') == 'true') {
-                    favorite.innerHTML = "Apple pie is one of your favorites";
+                if (storage.getItem('mercurial vapor') == 'true') {
+                    favorite.innerHTML = "Mercurial Vapor is one of your favorites";
                 }
             }
         }
@@ -32,178 +35,168 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
 </head>
 
-<body class="page">
-    <header class="page-header">
-        <nav>
-            <a href="index.html"><img src="images/favicon-96x96.png" width="48" height="48"></a>
-            <a href="index.html">Home</a>
-            <a href="footballboots.html">Football Boots</a>
-            <a href="trainers.html">Trainers</a>
-            <a href="clothing.html">Clothing</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
+<body>
+    <div class="page">
+        <header class="page-header">
+            <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <nav id="primaryMenu" class="primary-menu">
+                <a href="index.html"><img src="images/favicon-96x96.png" width="48" height="48"></a>
+                <a href="index.html">Home</a>
+                <a href="footballboots.html">Football Boots</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="clothing.html">Clothing</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="shipping.html">Shipping</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
 
-    <div class="page-content">
-        <aside class="content-aside">
+        <div class="page-content">
+            <aside class="content-aside">
 
-            <h1 id="pageLogo" class="page-logo">
-                <a href="index.html">
-                    <img src="images/nowelogo.png" />
-                </a>
-            </h1>
-
-            <p><strong>Exclusive sportswear designed and manufactured in ENGLAND. LIMITED Editions.
-                    LÓMË is the premium sportswear brand designed for any activity that requires
-                    activewear.</strong></p>
-
-            <h3 style="text-align: center;">Browse our shop</h3>
-
-            <input type="search" class="searchbox" placeholder="Search our store" />
-            <section id="promos">
-                <h2>Our weekly promotion</h2>
-                <div class="product-item">
-                    <h3>Nike Mercurial Vapor 13</h3>
-                    <strong>$180</strong>
-                    <img src="images/promotion-picuture.png" alt="White Gold" width="100%" />
-                </div>
-            </section>
-        </aside>
-
-        <main class="content-main">
-
-            <article>
-                <header>
-                    <h1 style="font-size:35px;color:maroon">Apple pie</h1>
-                </header>
-                <figure>
-                    <a href="images/products/applepie.jpg" target="blank">
-                        <img src="images/products/applepie.jpg" width="600" alt="Apple pie" />
+                <h1 id="pageLogo" class="page-logo">
+                    <a href="index.html">
+                        <img src="images/nowelogo.png" />
                     </a>
-                    <figcaption>Our world-famous apple pie</figcaption>
-                </figure>
+                </h1>
 
-                <button onclick="save()" type="button">Save as favorite</button>
-                <span id="favorite"></span>
+                <p>Exclusive sportswear designed and manufactured in ENGLAND. LIMITED Editions.
+                    LÓMË is the premium sportswear brand designed for any activity that requires
+                    activewear.</p>
 
-                <div style="background-color:whitesmoke;">
-                    <strong>Price: $12.95</strong>
-                    <h2>Description</h2>
-                    <p>
-                        Bethany received the recipe for this delicious apple pie from her grandmother. At the age of
-                        5,
-                        she
-                        was
-                        already baking this <em>all-American traditional apple</em> pie at her home.
-                        As the recipe goes a long way back, it contains the most typical ingredients used for so
-                        many
-                        years
-                        to
-                        make this classic even today one of our most popular pies.
-                    </p>
-                    <p>
-                        This pie is available <strong>every day</strong> and comes in 2 sizes. <span
-                            style="color:#4dcfa8; font-weight:bold ;">You can serve it cold or warm it for 4 minutes
-                            in
-                            the microwave to give it an extra touch. </span>Your house will smell just like
-                        Bethany's
-                        Shop!
-                    </p>
-                    <p>
-                        <blockquote>
-                            This recipe has been in our family for generations. We hope you enjoy this pie as we do
-                            -
-                            Bethany
-                        </blockquote>
-                    </p>
+                <h3 style="text-align: center;">Browse our shop</h3>
 
-                    <p><small>Note that some ingredients make be are dangerous if you have certain allergies. See
-                            the
-                            list
-                            of ingredients below.</small></p>
-                    <p><small>Bethany cares about the environment and we try to limit our CO<sub>2</sub> emissions
-                            as
-                            much
-                            as possible. See our terms page for more info.</small></p>
-                    <hr>
+                <input type="search" class="searchbox" placeholder="Search our store" />
+                <section id="promos">
+                    <h2>Our weekly promotion</h2>
+                    <div class="product-item">
+                        <h3>Nike Mercurial Vapor 13</h3>
+                        <strong>$180</strong>
+                        <img src="images/promotion-picuture.png" alt="White Gold" width="100%" />
+                    </div>
+                </section>
+            </aside>
 
-                    <h2>How we make this pie</h2>
-                    <ol>
-                        <li>
-                            First, we combine sugar, flour and spices. We toss the apples with some lemon juice and
-                            add
-                            sugar.
-                        </li>
-                        <li>We then create the bottom crust and fill that with apple mixture. We put some butter on
-                            that. We
-                            then roll remaining crust to fit top of pie.
-                        </li>
-                        <li>Then we beat the eggs white until we have a foamy mix. That is then brushed over the
-                            crust.
-                            We
-                            sprinkle some extra sugar.
-                        </li>
-                        <li>Then the pie goes into the oven at 360° for 35 minutes. When ready, we let it cool on a
-                            wire
-                            rack.
-                        </li>
-                    </ol>
+            <main class="content-main">
 
-                    <ol start=5>
-                        <li>If something goes wrong, we start all over again!</li>
-                    </ol>
+                <article>
+                    <header>
+                        <h1 style="font-size:35px;color:maroon">Nike Mercurial Vapor white gold</h1>
+                    </header>
+                    <figure>
+                        <a href="images/nikemercurialwhitegold.jpg" target="blank">
+                            <img src="images/nikemercurialwhitegold.jpg" width="600" alt="Mercurial Vapor" />
+                        </a>
+                        <figcaption>Our world-famous Nike Mercurial Vapor</figcaption>
+                    </figure>
 
-                    <h3>Ingredients</h3>
-                    <p>Please note that this item contains the following items and possible allergens!</p>
-                    <ul>
-                        <li>Butter</li>
-                        <li>Eggs</li>
-                        <li>Sugar</li>
-                        <ul>
-                            <li>Regular sugar</li>
-                            <li>Brown sugar</li>
-                            <li>Caster sugar</li>
-                        </ul>
-                        <li>Flour</li>
-                        <li>Cinnamon</li>
-                        <li>Ginger</li>
-                        <li>Nutmeg</li>
-                        <li>Apples</li>
-                        <li>Lemons</li>
-                    </ul>
-                </div>
+                    <button onclick="save()" type="button">Save as favorite</button>
+                    <span id="favorite"></span>
 
+                    <div style="background-color:#eaeaea9c; padding: 20px;">
+                        <strong>Price: $300</strong>
+                        <h2>Description:</h2><br>
 
-            </article>
-        </main>
-    </div>
-    <footer class="page-footer">
-        <div class="section-wrapper">
-            <section>
-                <h3>Our Address</h3>
-                <p> Our address is <address>LÓMË Sportswear - Princes Street Mansfield England</address>
-                </p>
-            </section>
-            <section>
-                <h3>Contact Us</h3>
-                <p>Contact us via <a href="mailto:matthewstanki@o2.pl">email</a></p>
-            </section>
-            <section>
-                <h3>Social Links</h3>
-                <p><a href="https://matthewstanki99.firebaseapp.com/" target="_blank">
-                        <img src="images/nowelogo.png" width="40" height="40" /></a></p>
-            </section>
+                        <p>Fit is the foundation of fast. No matter how innovative a pair of football boots may be, if
+                            the fit isn’t right, if the foot slides even 1 mm inside the boot, speed can be compromised.
+                            For this reason, fit became the focal point in designing the new Mercurial, leading to its
+                            game-changing 360 construction made possible through a new advancement in Nike Flyknit
+                            technology.</p><br>
+
+                        <p>The Mercurial Superfly 360 and Mercurial Vapor 360 wrap the entire foot in Nike Flyknit.
+                            “This new innovation hugs the foot and eliminates the gaps between the foot and the
+                            soleplate. In fact, it eliminates the soleplate altogether,” explains Max Blau, VP of Nike
+                            Football Footwear.</p><br>
+
+                        <p>Without a soleplate, the sockliner interlocks with a new internal chassis that is tuned for
+                            maximum responsiveness. The chassis is individually tuned per size via computational
+                            programming. “With previous Mercurials, we based everything on a size 9. But with Mercurial
+                            360, we can deliver properly proportioned fit at every size,” explains Jeongwoo Lee, Nike
+                            Football Senior Design Director. “Each size has a unique chassis designed to align with the
+                            expected bone structure.”</p><br>
+
+                        <p>Traction is provided by precisely placed studs in the forefoot and heel. Lee drew
+                            inspiration from agile cheetahs and focused on traction at speed, leading to the minimalist
+                            approach he affectionately refers to as the cheetah paw. “The aggressive forefoot is built
+                            for acceleration in any direction while the heel studs help the player stop on a dime,”
+                            notes Lee.</p><br>
+
+                        <p>The reimagined underfoot of the boot is more than just visually stunning. “This boot is less
+                            like a hoof, more like a claw,” explains Blau. “The feedback we get from players is that
+                            there is a sensation that the boot just disappears in the way it syncs with the foot.”</p>
+                        <br>
+
+                        <p>Cristiano Ronaldo embraced the Mercurial Superfly 360 right away. “My first reaction when I
+                            saw the new Mercurial was...the best boots ever! They fit straight away. The material, the
+                            design, the new technology, it’s amazing,” he says.</p><br>
+
+                        <p>The plush feel of the Mercurial 360 can also be attributed to advancements in Nike All
+                            Conditions Control (ACC). Previously, ACC was applied on top of the finished Flyknit
+                            product, creating a thin layer. Now, ACC is embedded into the yarns prior to knitting,
+                            eliminating the additional skin without compromising the performance benefit. The result is
+                            a matte finish on a texturized upper that is softer to the touch but can still battle the
+                            elements.</p><br>
+
+                        <p>For its 20th anniversary, the Mercurial adopts a clean aesthetic with a small forefoot
+                            Swoosh and a bold “M” on the heel. “Mercurial players tend to be very fast, so that “M” is
+                            the last thing defenders will see when a Mercurial player blows by them,” says Lee.</p><br>
+
+                        <p>On the Mercurial Superfly 360, the Dynamic Fit Collar takes on a lower cuff, similar to the
+                            modified version Ronaldo has preferred in recent seasons. Both the Superfly and Vapor
+                            versions of Mercurial 360 feature a soft, one-piece internal lining, part of the effort to
+                            reduce the number of boot components. “Mercurial is best when it’s minimal and streamlined,”
+                            says Lee. “Design done right doesn’t require excess parts.”</p><br>
+
+                        <p>For 20 years, Nike has designed Mercurial boots for the fastest players in the game,
+                            featuring experimental and game-changing innovations. Mercurial 360 builds on that proud
+                            tradition with a 360 construction that will soon appear in Nike footwear across other
+                            sports.</p><br>
+
+                        <p>Mercurial Superfly 360 and Mercurial Vapor 360 will debut on pitch this weekend and will be
+                            available February 14 on nike.com.<br>
+                        </p>
+                    </div>
+                </article>
+            </main>
         </div>
-        <p class="copyrights"><small>&copy; 2020 LÓMË - All rights reserved <a
-                    href="https://matthewstanki99.firebaseapp.com/" target="_blank" title="Link do mojej strony">Created
-                    by
-                    Mateusz
-                    Stankiewicz</a></small></p>
-    </footer>
+        <footer class="page-footer">
+            <div class="section-wrapper">
+                <section>
+                    <h3>Our Address</h3>
+                    <p> Our address is
+                    <address>LÓMË Sportswear - Princes Street Mansfield England</address>
+                    </p>
+                </section>
+                <section>
+                    <h3>Contact Us</h3>
+                    <p>Contact us via <a href="mailto:matthewstanki@o2.pl">email</a></p>
+                </section>
+                <section>
+                    <h3>Social Links</h3>
+                    <p><a href="https://matthewstanki99.firebaseapp.com/" target="_blank">
+                            <img src="images/nowelogo.png" width="40" height="40" /></a></p>
+                </section>
+            </div>
+            <p class="copyrights"><small>&copy; 2020 LÓMË - All rights reserved <a
+                        href="https://matthewstanki99.firebaseapp.com/" target="_blank"
+                        title="Link do mojej strony">Created
+                        by
+                        Mateusz
+                        Stankiewicz</a></small></p>
+        </footer>
+    </div>
     <script>
-      // let pageLogo = document.getElementById('pageLogo');
-      // pageLogo.innerHTML = "Mateusz Site";
+        // let pageLogo = document.getElementById('pageLogo');
+        // pageLogo.innerHTML = "Mateusz Site";
+
+        function toggleMenu() {
+            let primaryMenu = document.getElementById('primaryMenu');
+            if (primaryMenu.style.height == "0px") {
+                primaryMenu.style.height = "auto";
+            } else {
+                primaryMenu.style.height = "0px";
+            }
+        }
     </script>
 </body>
 
