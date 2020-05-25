@@ -23,13 +23,13 @@
       <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
       <nav id="primaryMenu" class="primary-menu">
         <a href="index.html"><img src="images/favicon-96x96.png" width="48" height="48"></a>
-                <a href="index.html">Home</a>
-                <a href="footballboots.html">Football Boots</a>
-                <a href="trainers.html">Trainers</a>
-                <a href="clothing.html">Clothing</a>
-                <a href="accessories.html">Accessories</a>
-                <a href="shipping.html">Shipping</a>
-                <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="footballboots.html">Football Boots</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="shipping.html">Shipping</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
 
@@ -43,12 +43,17 @@
         </h1>
 
         <p>Exclusive sportswear designed and manufactured in ENGLAND. LIMITED Editions.
-            LÓMË is the premium sportswear brand designed for any activity that requires
-            activewear.</p>
+          LÓMË is the premium sportswear brand designed for any activity that requires
+          activewear.</p>
 
-        <h3 style="text-align: center;">Browse our shop</h3>
+        <div class="search-box">
+          <h3 style="text-align: center;">Browse our shop</h3>
+          <div class="search-wrapper">
+            <input type="search" placeholder="Search our store" />
+            <button>Search</button>
+          </div>
+        </div>
 
-        <input type="search" class="searchbox" placeholder="Search our store" />
         <section id="promos">
           <h2>Our weekly promotion</h2>
           <div class="product-item">
@@ -56,7 +61,11 @@
             <strong>$180</strong>
             <img src="images/promotion-picuture.png" alt="White Gold" width="100%" />
           </div>
-        </section>
+        </section><br><br>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-6d082211-dc06-4efe-b6cc-9f23164ceab1"></div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-a1bb2b20-477f-49b3-afb1-f1b43d993ff0"></div>
       </aside>
 
       <main class="content-main">
@@ -64,14 +73,49 @@
           <article class="post">
             <header>
               <h2>LÓMË Premium Quality Sportswear</h2>
+              <time>24/05/2020 16:00</time>
+            </header>
+            <figure class="article-photo">
+              <img src="images/newspic2.jpg" alt="pic" />
+              <figcaption>Coronavirus</figcaption>
+            </figure>
+            <h2>COVID-19 announcement</h2>
+            <h4><span>BUSINESS AS USUAL</span></h4>
+
+            <p>LÓMË Sportswear are taking the COVID-19 (Coronavirus)
+              situation very seriously. Our priority as always is towards the safety and well-being of our employees and
+              customers.<br>
+
+              We would therefore like to reassure all of our customers that, until notified otherwise, all LÓMË
+              Sportswear locations and their Sales departments are open for business as usual. Our intention is to do
+              everything in our power to continue to provide our services and keep you safely in the
+              life.</p>
+
+            <h4><span>THANKS & BEST WISHES</span></h4>
+
+            <p>We thank you for your continued support and
+              understanding during these difficult times and look forward to providing you with an exceptional service,
+              now and in the future.<br>
+
+              We wish all our customers, colleagues and their families well.
+              <br>
+              <br>
+              <br>
+              Yours sincerely, <br>
+              Mateusz Stankiewicz<br>
+              LÓMË CEO</p>
+          </article>
+          <article class="post">
+            <header>
+              <h2>Welcome to Our New Website</h2>
               <time>02/05/2020 21:00</time>
               <!-- https://www.w3.org/TR/2011/WD-html5-author-20110809/the-time-element.html -->
             </header>
             <figure class="article-photo">
               <img src="images/newspic1.jpg" alt="Landscape" />
-              <figcaption>Secret location</figcaption>
+              <figcaption>Secret location</figcaption><br>
             </figure>
-            <h2>Welcome to Our New Website</h2>
+
             <p style="font-family:verdana;font-weight:bold;color: black;">
               We are thrilled to announce the launch of our brand new website! After a couple of weeks of
               hard work and dedication (even weekends), we are excited to officially announce the launch!
@@ -82,7 +126,7 @@
               Works in progress.
             </p>
             <p>Download our full <a href="downloads/Price list.zip">Price List</a></p>
-
+          </article>
         </section>
       </main>
     </div>
@@ -90,12 +134,13 @@
       <div class="section-wrapper">
         <section>
           <h3>Our Address</h3>
-          <p> Our address is <address>LÓMË Sportswear - Princes Street Mansfield England</address>
+          <p>
+          <address>LÓMË Sportswear - Princes Street Mansfield England</address>
           </p>
         </section>
         <section>
           <h3>Contact Us</h3>
-          <p>Contact us via <a href="mailto:matthewstanki@o2.pl">email</a></p>
+          <p>via <a href="mailto:matthewstanki@o2.pl">email</a></p>
         </section>
         <section>
           <h3>Social Links</h3>
@@ -103,14 +148,29 @@
               <img src="images/nowelogo.png" width="40" height="40" /></a></p>
         </section>
       </div>
+      <div class="trustpilot"><img src="images/trustpilot.png" alt="Rating" /></div>
       <p class="copyrights"><small>&copy; 2020 LÓMË - All rights reserved <a
             href="https://matthewstanki99.firebaseapp.com/" target="_blank" title="Link do mojej strony">Created by
             Mateusz Stankiewicz</a></small></p>
     </footer>
   </div>
+
+  <div class="cookies">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci fugit voluptate beatae minus aliquam
+      veniam nihil iure vero ut quidem quis dicta cupiditate repellendus ipsam consequatur voluptatibus, hic incidunt
+      voluptates, nostrum unde explicabo. Repudiandae voluptatem quaerat consectetur molestias suscipit ducimus nesciunt
+      aspernatur nemo in provident esse aliquid nihil magni dolor expedita omnis culpa aut tempore quia ullam,
+      praesentium porro eaque quae. Cupiditate quam facere veniam! Voluptatem temporibus commodi rerum quibusdam
+      incidunt nam nesciunt fuga labore! Laboriosam suscipit assumenda minima tempora excepturi error blanditiis
+      ducimus! Optio cumque sit, dignissimos molestias quasi obcaecati beatae enim nisi quaerat eos, quisquam error
+      iusto.</p>
+  </div>
+
   <script>
     // let pageLogo = document.getElementById('pageLogo');
     // pageLogo.innerHTML = "Mateusz Site";
+    //let primaryM = $('#primaryMenu');
+    //console.log(primaryM);
 
     function toggleMenu() {
       let primaryMenu = document.getElementById('primaryMenu');
