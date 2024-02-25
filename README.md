@@ -1,6 +1,6 @@
-## Mateusz Stankiewicz Portfolio
+## LÓMË Premium Quality Sportswear
 
-- https://matthewstanki.github.io
+- https://lome.azurewebsites.net
 
 Last Update On: 25 February 2024
 
@@ -44,5 +44,6 @@ IE 11+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | La
 ## My Work
 
 - LÓMË Premium Quality Sportswear (Hosted on Microsoft Azure)
+https://lome.azurewebsites.net
 
 With these updates, the website is ready to leverage the new features and improvements offered by Microsoft Azure, ensuring optimal performance and scalability.
