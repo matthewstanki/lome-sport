@@ -6,7 +6,7 @@
   <title>LÓMË Premium Quality Sportswear</title>
   <meta name="author" content="LÓMË">
   <meta name="description" content="Store front for LÓMË">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="images/nowelogo.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -135,35 +135,38 @@
         <section>
           <h3>Our Address</h3>
           <p>
-          <address>LÓMË Sportswear - Princes Street Mansfield England</address>
+            <address>LÓMË Sportswear - Mansfield, Nottinghamshire, England</address>
           </p>
         </section>
         <section>
           <h3>Contact Us</h3>
-          <p>via <a href="mailto:matthewstanki@o2.pl">email</a></p>
+          <p>via <a href="mailto:mateuszstankiewicz999@gmail.com">email</a></p>
         </section>
         <section>
           <h3>Social Links</h3>
-          <p><a href="https://matthewstanki99.firebaseapp.com/" target="_blank">
-              <img src="images/nowelogo.png" width="40" height="40" /></a></p>
+          <p class="social-icons">
+            <a href="https://www.facebook.com/mateusz.stanki/"><img src="images/facebook.png" alt="Facebook" width="30" height="30" /></a>
+            <a href="https://www.instagram.com/matthewstanki/"><img src="images/instagram.png" alt="Instagram" width="30" height="30" /></a>
+            <a href="https://github.com/matthewstanki"><img src="images/github.png" alt="Github" width="30" height="30" /></a>
+            <a href="https://www.twitter.com/MatthewStanki"><img src="images/twitter.png" alt="Twitter" width="30" height="30" /></a>
+            <a href="https://matthewstanki.github.io/" target="_blank"><img src="images/nowelogo.png" alt="Portfolio" width="30" height="30" /></a>
+          </p>
         </section>
       </div>
-      <div class="trustpilot"><img src="images/trustpilot.png" alt="Rating" /></div>
-      <p class="copyrights"><small>&copy; 2020 LÓMË - All rights reserved <a
-            href="https://matthewstanki99.firebaseapp.com/" target="_blank" title="Link do mojej strony">Created by
-            Mateusz Stankiewicz</a></small></p>
+      <div class="trustpilot">
+        <img src="images/trustpilot.png" alt="Rating" />
+      </div>
+      <p class="copyrights">
+        <small>&copy; 2020 LÓMË - All rights reserved <a href="https://matthewstanki.github.io/" target="_blank" title="Link do mojej strony">Created by Mateusz Stankiewicz</a></small>
+      </p>
     </footer>
   </div>
 
   <div class="cookies">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci fugit voluptate beatae minus aliquam
-      veniam nihil iure vero ut quidem quis dicta cupiditate repellendus ipsam consequatur voluptatibus, hic incidunt
-      voluptates, nostrum unde explicabo. Repudiandae voluptatem quaerat consectetur molestias suscipit ducimus nesciunt
-      aspernatur nemo in provident esse aliquid nihil magni dolor expedita omnis culpa aut tempore quia ullam,
-      praesentium porro eaque quae. Cupiditate quam facere veniam! Voluptatem temporibus commodi rerum quibusdam
-      incidunt nam nesciunt fuga labore! Laboriosam suscipit assumenda minima tempora excepturi error blanditiis
-      ducimus! Optio cumque sit, dignissimos molestias quasi obcaecati beatae enim nisi quaerat eos, quisquam error
-      iusto.</p>
+    <button class="close-btn" onclick="closeCookies()">Close</button>
+    <p>
+      🍪 Indulge in our sweet selection of treats! By continuing to browse, you agree to our use of cookies to enhance your shopping experience. Click here to learn more about our cookie policy.
+    </p>
   </div>
 
   <script>
@@ -180,6 +183,10 @@
         primaryMenu.style.height = "0px";
       }
     }
+
+    function closeCookies() {
+  document.querySelector('.cookies').style.display = 'none';
+}
   </script>
 </body>
 
